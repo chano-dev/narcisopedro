@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import narcisoPhoto from "@/assets/narcisopedro.jpg";
 
 const HeroSection = () => {
   const scrollTo = (href: string) => {
@@ -42,7 +43,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 onClick={() => scrollTo("#servicos")}
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 py-6 text-base"
+                className="bg-[#f6f7f9] border-primary-foreground/30 text-accent hover:bg-primary-foreground/10 px-8 py-6 text-base hover:text-white"
               >
                 Conhecer Serviços
               </Button>
@@ -57,9 +58,7 @@ const HeroSection = () => {
             className="flex justify-center"
           >
             {/* SUBSTITUIR: Trocar este placeholder pela foto real do Narciso Pedro */}
-            <div className="photo-placeholder h-[420px] w-[340px] md:h-[500px] md:w-[400px]">
-              <User className="h-32 w-32 gold-accent opacity-40" />
-            </div>
+            <img src={narcisoPhoto} alt="Narciso Pedro" className="h-[420px] w-[340px] md:h-[500px] md:w-[400px] rounded-2xl border-2 border-accent object-cover" />
           </motion.div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { User, Award, Users, BookOpen, GraduationCap } from "lucide-react";
+import narcisoPhoto from "@/assets/narcisopedro_2.jpg";
 
 const stats = [
   { icon: Award, value: "7+", label: "Anos de Experiência" },
@@ -26,9 +27,7 @@ const AboutSection = () => (
           className="flex justify-center"
         >
           {/* SUBSTITUIR: Trocar este placeholder pela foto real do Narciso Pedro */}
-          <div className="photo-placeholder h-[400px] w-[320px]">
-            <User className="h-24 w-24 gold-accent opacity-40" />
-          </div>
+        <img src={narcisoPhoto} alt="Narciso Pedro" className="h-[420px] w-[340px] md:h-[500px] md:w-[400px] rounded-2xl border-2 border-accent object-cover" />
         </motion.div>
 
         {/* Text */}
