@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { User } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import narcisoPhoto from "@/assets/narcisopedro.png";
+import narcisoPhoto from "@/assets/narcisopedro.jpg";
 
 const HeroSection = () => {
   const scrollTo = (href: string) => {
